@@ -12,8 +12,8 @@
 </template>
 
 <static-query>
-    query LatestPosts {
-        allBlogPost (sortBy: "date", order:DESC, perPage: 2) {
+    query AllPosts {
+        allBlogPost (sortBy: "date", order:DESC) {
             edges {
                 node {
                     id
