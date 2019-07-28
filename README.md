@@ -1,14 +1,7 @@
-# Default starter for Gridsome
+# My blog, because reasons
 
-This is the project you get when you run `gridsome create new-project`.
+Default layout and styling (ish) from the Gridsome framework. Initially created in React/Gatsby, this is a try at Vue with Gridsome for the same effect.
+Blog posts typed in MD (markdown) which are easily transfered from framework to framework, luckily.
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+### Where?
+The site is published at [on Netlify](https://jlabs.netlify.com) and 'hosted' here on Github. Netlify is clever in that when new changes are pushed to the Git repo, Netlify rebuilds the site and publishes to the URL auto-magically.

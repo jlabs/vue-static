@@ -18,7 +18,7 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-    siteName: 'Gridsome',
+    siteName: 'jLabs',
     plugins: [{
         use: '@gridsome/source-filesystem',
         options: {
