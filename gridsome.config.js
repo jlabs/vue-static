@@ -26,13 +26,22 @@ module.exports = {
             typeName: 'BlogPost',
             route: '/posts/:slug'
         }
+    }, {
+        use: '@gridsome/source-filesystem',
+        options: {
+            path: 'src/projects/**/*.md',
+            typeName: 'Project',
+            route: '/projects/:slug'
+        }
     }],
+
     transformers: {
         remark: {
             externalLinksTarget: '_blank',
             externalLinksRel: ['nofollow', 'noopener', 'noreferer']
         }
     },
+
     chainWebpack: config => {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
         types.forEach(type =>

@@ -6,7 +6,6 @@ title: "Is this thing on?"
 Might do a first 'push' to Github to see if this actually works.
 
 I might be back
----
 Well, I've reset all the CSS using various copy & pasting suggestions from le internets.
 Hello
 ...

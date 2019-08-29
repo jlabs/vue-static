@@ -2,6 +2,7 @@
     <Layout :background="$page.blogPost.image">
         <h1>{{$page.blogPost.title}}</h1>
         <p>{{$page.blogPost.date }}</p>
+        <p>{{$page.blogPost.timeToRead}} mins to read</p>
         <div v-html="$page.blogPost.content"></div>
     </Layout>
 </template>
@@ -14,6 +15,7 @@
             tags
             date (format: "Do MMM YYYY")
             image (height: 400)
+            timeToRead
         }
     }
 </page-query>

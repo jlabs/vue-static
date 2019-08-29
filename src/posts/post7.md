@@ -2,6 +2,7 @@
 slug: "/wait"
 date: 2019-02-16
 title: "Wait for it"
+status: "live"
 ---
 
 ## Please wait

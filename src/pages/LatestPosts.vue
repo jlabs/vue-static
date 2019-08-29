@@ -1,6 +1,8 @@
+<!-- PAGE NOT USED -->
+
 <template>
     <LayoutTwo :latest="true">
-        <h1>Posts</h1>
+        <h1>Posts123</h1>
     </LayoutTwo>
 </template>
 

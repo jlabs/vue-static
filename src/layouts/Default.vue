@@ -4,11 +4,9 @@
         <strong>
           <g-link to="/">{{ $static.metaData.siteName }}</g-link>
         </strong>
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/posts">Posts</g-link>
-          <g-link class="nav__link" to="/about">About</g-link>
-        </nav>
+
+        <Nav/>
+        
       </header>
       <g-image v-if="background" :src="background" class="billboard" />
       <!--<g-image src="~/assets/images/65.jpg" width="200" quality="100"/>-->
@@ -19,18 +17,25 @@
               <slot/>
             </main>
           </transition>
+
         <LatestPosts/>
+
+        <Footer/>
       </div>
   </div>
 </template>
 
 <script>
-  import LatestPosts from '~/components/LatestPosts.vue';
+  import LatestPosts from '~/components/LatestPosts';
+  import Nav from '~/components/Nav';
+  import Footer from '~/components/Footer';
 
   export default {
     props: ["background"],
     components: {
-      LatestPosts
+      LatestPosts,
+      Nav,
+      Footer
     }
   }
 </script>
