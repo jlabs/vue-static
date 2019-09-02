@@ -22,7 +22,7 @@
 
 <static-query>
     query LatestPosts {
-        allBlogPost (sortBy: "date", order:DESC, perPage: 3, , filter: {status: { ne: "draft"}}) {
+        allBlogPost (sortBy: "date", order:DESC, perPage: 2, , filter: {status: { ne: "draft"}}) {
             edges {
                 node {
                     id
