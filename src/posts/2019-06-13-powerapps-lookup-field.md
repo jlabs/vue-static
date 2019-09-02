@@ -1,5 +1,4 @@
 ---
-slug: "/first-post"
 date: 2019-02-05
 title: "Our first post"
 tag: "PowerApps"
