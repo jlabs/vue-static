@@ -1,7 +1,7 @@
 ---
 title: "Buoy Oh Buoy"
 languages: ['html','scss','js','node.js','puppeteer']
-status: ['live','on-going']
+status: ['ongoing']
 url: "http://jlabs.netlify.co"
 date: 2019-08-01
 ---

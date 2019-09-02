@@ -18,7 +18,11 @@
             </main>
           </transition>
 
+        
         <LatestPosts/>
+            
+          
+
 
         <Footer/>
       </div>

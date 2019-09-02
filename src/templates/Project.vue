@@ -3,10 +3,13 @@
         <h1>{{$page.project.title}}</h1>
         <div v-html="$page.project.content"></div>
         <h4>Languages used/learnt</h4>
-        <ul>
+        <div class="lists">
 
-        <li v-for="language in $page.project.languages" :key="language">{{language}}</li>
-        </ul>
+            <ul class="nes-list is-disc">
+
+                <li v-for="language in $page.project.languages" :key="language">{{language}}</li>
+            </ul>
+        </div>
     </Layout>
 </template>
 
