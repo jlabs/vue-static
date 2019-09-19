@@ -1,5 +1,4 @@
 ---
-slug: "/netli-hi"
 date: 2019-02-11
 title: "This might work"
 ---

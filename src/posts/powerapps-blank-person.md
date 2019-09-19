@@ -1,5 +1,4 @@
 ---
-slug: "/powerapps-blank-person"
 date: 2019-08-15
 title: "Setting a Person field to empty/blank"
 status: "draft"

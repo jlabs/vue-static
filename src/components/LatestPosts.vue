@@ -1,33 +1,28 @@
 <template>
-    <section>
-
-        <section class="showcase">
-          <section class="nes-container with-title">
-            <h3 class="title">Latest Posts</h3> 
-
-                <div class="latestPostsContainer">
-                    <article v-for="edge in $static.allBlogPost.edges" :key="edge.node.id">
-                        <!--<div v-html="edge.node.content" />-->
-
-                        <h4>{{ edge.node.title }}</h4>
-                        <p>{{ edge.node.date }}</p>
-                        <g-link :to="`${edge.node.path}`">More..</g-link>
-                    </article>  
+    <div class="p-2">
+        <div class="text-2xl underline">Latest Posts</div> 
+            <div v-for="edge in $static.allBlogPost.edges" :key="edge.node.id" class="py-1">
+                <g-link :to="`${edge.node.path}`" class="text-xs text-pink-600">
+                    <div class="text-xl">
+                        {{ edge.node.title }}
+                        </div>
+                    </g-link>
+                <div class="text-sm">
+                    {{ edge.node.date }}
                 </div>
-        
-          </section>
-        </section>
-    </section>
+            </div>  
+            <!--<div class=""><g-link class="" to="/posts">View all...</g-link></div>-->
+    </div>
 </template>
 
 <static-query>
     query LatestPosts {
-        allBlogPost (sortBy: "date", order:DESC, perPage: 2, , filter: {status: { ne: "draft"}}) {
+        allBlogPost (sortBy: "date", order:DESC, perPage: 3, , filter: {status: { eq: "live"}}) {
             edges {
                 node {
                     id
                     title
-                    date (format: "DD/MM/YY")
+                    date (format: "Do MMM 'YY")
                     content
                     tags
                     path
@@ -37,16 +32,4 @@
     }
 </static-query>
 
-<style <style scoped>
-    .showcase {
-        margin: 12px 0;
-    }
-
-    .latestPostsContainer {
-        display: flex;
-        justify-content:space-around;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-</style>
 

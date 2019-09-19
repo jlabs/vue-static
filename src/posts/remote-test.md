@@ -1,5 +1,4 @@
 ---
-slug: "/first-post"
 date: 2019-08-07
 title: "Remote post test"
 ---

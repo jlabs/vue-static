@@ -1,10 +1,16 @@
 <template>
-    <nav class="nav">
-          <g-link class="nav__link nes-btn is-warning" exact-active-class="is-primary" to="/">Home</g-link>
-          <g-link class="nav__link nes-btn is-warning" exact-active-class="is-primary" to="/posts">Posts</g-link>
-          <g-link class="nav__link nes-btn is-warning" exact-active-class="is-primary" to="/projects">Projects</g-link>
-          <g-link class="nav__link nes-btn is-warning" exact-active-class="is-primary" to="/about">About</g-link>
-        </nav>
+
+  <nav class="p-2 w-full">
+    <ul>
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/">Home</g-link></li>
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/posts">Posts</g-link></li>
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/projects">Projects</g-link></li>
+        <!--<li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/repos">Repos</g-link></li>-->
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/about">About</g-link></li>        
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/what">What I ...</g-link></li>        
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/contact">Contact</g-link></li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped>
@@ -17,3 +23,10 @@
 </style>
 
 
+<static-query>
+  query {
+    metaData {
+      siteName
+    }
+  }
+</static-query>

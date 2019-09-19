@@ -1,19 +1,16 @@
 <template>
   <Layout>
+    <div class="my-2 text-6xl">
+      Hello World!
+    </div>
+    <div class="">
+      Have a look at the <g-link to='/about' class="text-pink-400">about page</g-link> for more info.
+    </div>
     
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <!--<g-image alt="Example image" src="~/favicon.png" width="135" />-->
-    
-    <h1>Hello, world!</h1>
-   
-    <p>
-      This site/blog/mess, was created using Gridsome, hosted on GitHub, and built on Netlify.
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-2" role="alert">
+      <strong class="font-bold">This site is not responsive.</strong>
+      <span class="block sm:inline">Yet.</span>
+    </div>
 
   </Layout>
 </template>

@@ -7,7 +7,7 @@ export default function(Vue, { router, head, isClient }) {
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout)
 
-    head.link.push({
+    /* head.link.push({
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Press+Start+2P',
     })
@@ -15,5 +15,9 @@ export default function(Vue, { router, head, isClient }) {
     head.link.push({
         rel: 'stylesheet',
         href: 'https://unpkg.com/nes.css@latest/css/nes.min.css',
-    })
+    }) */
+
+    head.htmlAttrs = { lang: 'en', class: 'text-gray-900 antialiased leading-tight' };
+    head.bodyAttrs = { class: 'min-h-screen bg-gray-100' };
+
 }

@@ -20,20 +20,39 @@ function addStyleResource(rule) {
 module.exports = {
     siteName: 'jLabs',
     plugins: [{
-        use: '@gridsome/source-filesystem',
-        options: {
-            path: 'src/posts/**/*.md',
-            typeName: 'BlogPost',
-            route: '/posts/:slug'
+            use: 'gridsome-plugin-tailwindcss',
+            options: {
+                //tailwindConfig: './some/file/js',
+                purgeConfig: {},
+                presetEnvConfig: {},
+                shouldPurge: true,
+                shouldImport: true,
+                shouldTimeTravel: true,
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'src/posts/**/*.md',
+                typeName: 'BlogPost',
+                route: '/posts/:slug'
+            }
+        },
+        {
+            use: `gridsome-plugin-netlify-cms`,
+            options: {
+                publicPath: `/admin`
+            }
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'src/projects/**/*.md',
+                typeName: 'Project',
+                route: '/projects/:slug'
+            }
         }
-    }, {
-        use: '@gridsome/source-filesystem',
-        options: {
-            path: 'src/projects/**/*.md',
-            typeName: 'Project',
-            route: '/projects/:slug'
-        }
-    }],
+    ],
 
     transformers: {
         remark: {

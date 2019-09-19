@@ -11,7 +11,7 @@
 
 
         <div class="w-3/6 relative flex">
-          <div class="self-center mr-2">
+          <div class="self-start">
               <transition name="fade" appear>
                 <main>
                   <slot/>
@@ -33,7 +33,7 @@
               <Nav/>
             </div>
 
-            <div class="w-full p-2 self-end fixed">
+            <div class="absolute bottom-0 w-full p-2">
               <Social/>
             </div>  
             
@@ -66,6 +66,8 @@
   import Footer from '~/components/Footer';
   import Header from '~/components/Header';
   import Social from '~/components/Social';
+  
+
 
   export default {
     props: ["background"],
@@ -75,7 +77,7 @@
       Footer,
       Header,
       Nav,
-      Social
+      Social,
     }
   }
 </script>

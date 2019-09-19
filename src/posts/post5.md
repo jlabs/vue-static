@@ -1,5 +1,4 @@
 ---
-slug: "/we-be-live"
 date: 2019-02-09
 title: "We're live!"
 ---

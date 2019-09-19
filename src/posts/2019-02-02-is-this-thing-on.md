@@ -1,5 +1,4 @@
 ---
-slug: "/is-this-thing-on"
 date: 2019-02-02
 title: "Is this thing on?"
 ---
