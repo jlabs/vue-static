@@ -1,5 +1,5 @@
 ---
-title: Saving a signature to SharePoint from PowerApps via Flow
+title: Saving pen input to SharePoint from PowerApps via Flow
 status: draft
 date: 2019-09-23T08:29:42.131Z
 ---
