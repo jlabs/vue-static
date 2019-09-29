@@ -2,7 +2,7 @@
 
   <nav class="p-2 w-full">
     <ul>
-        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/">Home</g-link></li>
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/">Hi</g-link></li>
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/posts">Posts</g-link></li>
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/projects">Projects</g-link></li>
         <!--<li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/repos">Repos</g-link></li>-->
