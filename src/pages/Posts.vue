@@ -1,5 +1,6 @@
 <template>
   <Layout>
+      <div class="">
     <div v-for="edge in $page.allBlogPost.edges" :key="edge.node.id" class="my-2">
         
         <PostCard
@@ -7,7 +8,7 @@
             :path="edge.node.path"
             :date="edge.node.date"
         />
-
+    </div>
         <Pager :info="$page.allBlogPost.pageInfo" class="mt-4 text-xl"/>
     </div>
   </Layout>
