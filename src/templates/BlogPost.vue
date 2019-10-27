@@ -1,7 +1,6 @@
 <template>
     <Post :background="$page.blogPost.image" class="">
-        
-        <div class="text-3xl font-black">{{$page.blogPost.title}}</div>
+        <div class="text-3xl md:text-2xl font-black">{{$page.blogPost.title}}</div>
         <div class="text-sm font-semibold">{{$page.blogPost.date }}</div>
         <div class="text-sm my-1 font-thin">{{$page.blogPost.timeToRead}} mins to read</div>
         <div class="mr-2" v-html="$page.blogPost.content"></div>

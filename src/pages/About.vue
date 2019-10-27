@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="text-xl">
+    <div class="text-xl self-center">
       <div class="my-2">
         Not much to say here just yet, but there will be some, mildly, useful words sometime soon.
       </div>

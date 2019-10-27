@@ -1,17 +1,14 @@
 <template>
-  <div class="container mx-auto px-8 min-h-screen h-full">
-
+  <div class="container mx-auto min-h-screen h-full">
       <!--<Header />-->
-
-
       <div class="flex min-h-screen h-full">
         
-        <div class="w-1/6"></div>
+        <div class="md:hidden w-1/6"></div>
 
 
 
-        <div class="w-3/6 relative flex">
-          <div class="self-start">
+        <div class="lg:w-2/3 w-1/2 relative flex md:pl-2">
+          <div class="self-start mr-2">
               <transition name="fade" appear>
                 <main>
                   <slot/>
@@ -25,25 +22,20 @@
 
 
         
-        <div class="w-1/6 bg-pink-600">
-
+        <div class="lg:w-1/3 w-1/6 bg-pink-600">
           <div class="flex h-screen relative flex-row w-full items-stretch">
-
             <div class="self-center fixed">
               <Nav/>
             </div>
-
-            <div class="absolute bottom-0 w-full p-2">
+            <div class="w-full p-2 self-end fixed">
               <Social/>
-            </div>  
-            
+            </div>            
           </div>
-
         </div>
 
 
 
-        <div class="w-1/6 flex h-screen">
+        <div class="lg:hidden w-1/6 flex h-screen">
           <div class="self-center">
             <LatestPosts/>
             <LatestProjects/>

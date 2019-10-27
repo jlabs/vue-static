@@ -6,7 +6,6 @@ url: "http://comicoffee.uk"
 date: 2019-06-01
 theme: red
 summary: "Website for local comic theme'd coffee shop"
-image: "images/comicoffee.jpg"
 ---
 The idea was to make a comic looking website to suit the theme of the shop using comic 'panels' for sections such as opening times, a map, menu, etc.
 </br></br>

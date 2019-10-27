@@ -22,7 +22,7 @@ module.exports = {
     plugins: [{
             use: 'gridsome-plugin-tailwindcss',
             options: {
-                //tailwindConfig: './some/file/js',
+                tailwindConfig: './tailwind.config.js',
                 purgeConfig: {},
                 presetEnvConfig: {},
                 shouldPurge: true,

@@ -1,14 +1,13 @@
 <template>
   <Layout>
     <div v-for="edge in $page.allBlogPost.edges" :key="edge.node.id" class="my-2">
-        <g-link :to="`${edge.node.path}`">
-            <div class="text-3xl text-pink-600">
-                {{ edge.node.title }}
-            </div>
-        </g-link>
-        <!--<div class="" v-html="`${edge.node.content}`"></div>-->
         
-        <div class="font-thin">{{ edge.node.date }}</div>
+        <PostCard
+            :title="edge.node.title"
+            :path="edge.node.path"
+            :date="edge.node.date"
+        />
+
         <Pager :info="$page.allBlogPost.pageInfo" class="mt-4 text-xl"/>
     </div>
   </Layout>
@@ -16,6 +15,7 @@
 
 <script>
 import { Pager } from 'gridsome'
+import PostCard from '~/components/PostCard'
 
 export default {
     data() {
@@ -25,6 +25,7 @@ export default {
     },
     components: {
         Pager,
+        PostCard
     },
     methods: {
         setExcerpt(word) {
