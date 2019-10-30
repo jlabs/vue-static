@@ -5,6 +5,7 @@
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" exact-active-class="text-gray-800 text-3xl" to="/">Hi</g-link></li>
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" active-class="text-gray-800 text-3xl" to="/posts">Blog</g-link></li>
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" active-class="text-gray-800 text-3xl" to="/projects">Projects</g-link></li>
+        <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" active-class="text-gray-800 text-3xl" to="/shortcuts">Shortcuts</g-link></li>
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" active-class="text-gray-800 text-3xl" to="/shop">Shop</g-link></li>
         <!--<li><g-link class="text-white text-lg hover:text-gray-800 text-2xl" exact-active-class="text-gray-800 text-3xl" to="/repos">Repos</g-link></li>-->
         <li><g-link class="text-white text-lg hover:text-gray-800 text-2xl sm:text-xl" exact-active-class="text-gray-800 text-3xl" to="/about">About</g-link></li>        
